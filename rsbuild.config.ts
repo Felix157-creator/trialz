@@ -7,7 +7,7 @@ import { pluginSass } from '@rsbuild/plugin-sass';
 // Heroku's build doesn't surface it otherwise; a missing file is a no-op.
 loadEnv({ mode: 'production' });
 
-const isStaticBuild = process.env.NEXT_PUBLIC_APP_BUILD === 'true';
+const isStaticBuild = process.env.NEXT_PUBLIC_APP_BUILD === 'false';
 
 // Resolve smartcharts from wherever the package actually lives so the asset
 // copy works both standalone and inside the monorepo (npm workspaces hoist the
